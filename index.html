@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Game, Tic tac toe, minigame">
+    <title>Tic Tac Toe Game</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome To The</h1>
+        <h1>Tic Tac Toe Game</h1>       
+    </header>
+    <div class="body">
+        <div>
+            <p id="Hasil">click and play it, Have Fun!</p>
+        </div>
+        <div class="Score">
+            <div id="User" class="badge">User</div>
+            <div id="Computer" class="badge">Comp</div>
+            <span id="User-Score">0</span>:<span id="Computer-Score">0</span>
+        </div>
+
+        <div class="game">
+            <div class="top">
+                <img src="images/blank.png" alt="" id="0" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="1" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="2" onclick="change(this.id);">
+            </div>
+            <div class="mid">
+                <img src="images/blank.png" alt="" id="3" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="4" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="5" onclick="change(this.id);">
+
+            </div>
+            <div class="bot">
+                <img src="images/blank.png" alt="" id="6" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="7" onclick="change(this.id);">
+                <img src="images/blank.png" alt="" id="8" onclick="change(this.id);">
+
+            </div>
+            <input id="Restart-Button" type="submit" onclick="restart()" name="Restart" value="Restart" >
+        </div>
+    </div>
+</body>
+</html>
